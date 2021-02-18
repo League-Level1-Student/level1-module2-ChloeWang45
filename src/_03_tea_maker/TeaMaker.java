@@ -15,6 +15,8 @@ public class TeaMaker {
 		mint.getFlavor();
 		kettle.getWater();
 		kettle.boil();
+		Kettle.Water water = kettle.getWater();
+		cup.makeTea(mint, water);
 	}
 		
 }

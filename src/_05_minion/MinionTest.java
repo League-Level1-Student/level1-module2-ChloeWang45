@@ -1,13 +1,16 @@
 package _05_minion;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
 /*
  *    Copyright (c) The League of Amazing Programmers 2013-2019
  *    Level 1
  */
 
 
-import static org.junit.Assert.*;
 
-import org.junit.Test;
 
 
 /*
@@ -32,6 +35,38 @@ This is because there is no Minion class in the package.
   To check, run this MinionTest class and the JUnit tab should show a GREEN bar.
     
  */
+class Minion{
+	
+	private String name; 
+	private int eyes; 
+	private String color; 
+	private String master;
+	Minion(String name, int eyes, String color, String master){
+		this.name = name;
+		this.color = color;
+		this.eyes = eyes;
+	}
+	
+	String getName() {
+		return name;
+	}
+	
+	int getEyes() {
+		return eyes;
+	}
+	
+	String getColor() {
+		return color;
+	}
+	
+	void setMaster(String master) {
+		this.master = master;
+	}
+	
+	String getMaster() {
+		return master;
+	}
+}
 
 public class MinionTest {
 
